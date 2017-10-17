@@ -75,7 +75,7 @@ public class ThongKe extends javax.swing.JFrame {
         this.taBaoCao.append(this.lbTongPhieu.getText()+"\n");
         this.taBaoCao.append(this.lbTongKhachMuon.getText()+"\n");
         this.taBaoCao.append(this.lbTongPhieuQuaHan.getText()+"\n\n");
-        this.taBaoCao.append("| Mã PM    | Mã KH    | Mã sách | Ngày mượn | Hạn trả      |Tiền cọc|Ngày Trả |\n");
+        this.taBaoCao.append("| Mã PM    | Mã KH    | Mã sách |  Ngày mượn  | Hạn trả      | Ngày Trả |\n");
         for(int i=1;i<=l.size();i++)
         this.taBaoCao.append(l.get(1).toString()+"\n");
     }

@@ -32,6 +32,10 @@ public class KhachHang {
         this.diaChi = diaChi;
         this.phone = phone;
     }
+
+    public KhachHang(String text, String text0, Date valueOf, String text1, String text2) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     public String getMaKH() {
         return maKhachHang;
     }
