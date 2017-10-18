@@ -69,14 +69,13 @@ public class KhachHangData {
     
     public boolean UpdateKhachHang(KhachHang kh) {
         try {
-            ps = Connect.getConnect().prepareStatement("UPDATE KHACH_HANG SET Password = ?, Ten_Khach_hang = ?,"
+            ps = Connect.getConnect().prepareStatement("UPDATE KHACH_HANG SET  Ten_Khach_hang = ?,"
                     + "Ngay_sinh = ?, Dia_chi = ?, Phone = ? where Ma_Khach_hang = ?");
-            ps.setString(6, kh.getMaKH());
-            ps.setString(1, kh.getPass());
-            ps.setString(2, kh.getName());
-            ps.setDate(3, kh.getBirth());
-            ps.setString(4, kh.getDiaChi());
-            ps.setString(5, kh.getPhone());
+            ps.setString(5, kh.getMaKH());
+            ps.setString(1, kh.getName());
+            ps.setDate(2, kh.getBirth());
+            ps.setString(3, kh.getDiaChi());
+            ps.setString(4, kh.getPhone());
             return ps.executeUpdate() >0;
         } catch (Exception e) {
             return false;

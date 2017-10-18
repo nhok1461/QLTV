@@ -14,7 +14,6 @@ import java.sql.Date;
 public class KhachHang {
     
     private String maKhachHang;
-    private String password;
     private String name;
     private Date birth;
     private String diaChi;
@@ -24,16 +23,15 @@ public class KhachHang {
         
     }
     
-    public KhachHang(String maKH, String password, String name, Date birth, String diaChi, String phone) {
+    public KhachHang(String maKH, String name, Date birth, String diaChi, String phone) {
         this.maKhachHang = maKH;
-        this.password = password;
         this.name = name;
         this.birth = birth;
         this.diaChi = diaChi;
         this.phone = phone;
     }
 
-    public KhachHang(String text, String text0, Date valueOf, String text1, String text2) {
+    public KhachHang(String text, Date valueOf, String text1, String text2) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     public String getMaKH() {
@@ -42,14 +40,7 @@ public class KhachHang {
     public void setMaKH(String maKH) {
         this.maKhachHang = maKH;
     }
-    
-    public String getPass() {
-        return password;
-    }
-    public void setPass(String pass) {
-        this.password = pass;
-    }
-    
+       
     public String getName() {
         return name;
     }
