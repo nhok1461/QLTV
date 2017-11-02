@@ -85,13 +85,11 @@ public class JAdminSearch extends javax.swing.JFrame {
         jTextField2 = new javax.swing.JTextField();
         jPanel1 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
-        txtPassword = new javax.swing.JTextField();
         txtTenKhach = new javax.swing.JTextField();
         txtNgaySinh = new javax.swing.JTextField();
         txtDiaChi = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         txtPhone = new javax.swing.JTextField();
-        jLabel9 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         tbKhach = new javax.swing.JTable();
         jLabel10 = new javax.swing.JLabel();
@@ -352,8 +350,6 @@ public class JAdminSearch extends javax.swing.JFrame {
 
         jLabel8.setText("Mã khách hàng");
 
-        jLabel9.setText("Password");
-
         tbKhach.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -398,12 +394,10 @@ public class JAdminSearch extends javax.swing.JFrame {
                             .addGroup(jPanel4Layout.createSequentialGroup()
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtMaKhach, javax.swing.GroupLayout.DEFAULT_SIZE, 289, Short.MAX_VALUE)
-                                    .addComponent(txtPassword)
                                     .addComponent(txtTenKhach))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -438,9 +432,7 @@ public class JAdminSearch extends javax.swing.JFrame {
                     .addComponent(txtNgaySinh, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel9)
                     .addComponent(jLabel12)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtDiaChi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -550,7 +542,6 @@ public class JAdminSearch extends javax.swing.JFrame {
             ResultSet rs = UpdateTable.ShowTextField(sql1);
             if(rs.next()) {
                 this.txtMaKhach.setText(rs.getString("Ma_Khach_hang"));
-                this.txtPassword.setText(rs.getString("Password"));
                 this.txtTenKhach.setText(rs.getString("Ten_Khach_hang"));
                 this.txtNgaySinh.setText(rs.getString("Ngay_sinh"));
                 this.txtDiaChi.setText(rs.getString("Dia_Chi"));
@@ -678,7 +669,6 @@ public class JAdminSearch extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
@@ -706,7 +696,6 @@ public class JAdminSearch extends javax.swing.JFrame {
     private javax.swing.JTextField txtNgaySinh;
     private javax.swing.JTextField txtNguoiMuon;
     private javax.swing.JTextField txtNhaXb;
-    private javax.swing.JTextField txtPassword;
     private javax.swing.JTextField txtPhone;
     private javax.swing.JTextField txtSachMuon;
     private javax.swing.JTextField txtSoLuong;

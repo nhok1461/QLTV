@@ -517,13 +517,11 @@
                                       <Group type="102" alignment="0" attributes="0">
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                               <Component id="jLabel8" max="32767" attributes="0"/>
-                                              <Component id="jLabel9" max="32767" attributes="0"/>
                                               <Component id="jLabel10" alignment="1" min="-2" pref="86" max="-2" attributes="0"/>
                                           </Group>
                                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                               <Component id="txtMaKhach" alignment="0" pref="289" max="32767" attributes="0"/>
-                                              <Component id="txtPassword" alignment="0" max="32767" attributes="0"/>
                                               <Component id="txtTenKhach" alignment="0" max="32767" attributes="0"/>
                                           </Group>
                                           <EmptySpace max="32767" attributes="0"/>
@@ -570,9 +568,7 @@
                           </Group>
                           <EmptySpace type="unrelated" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="jLabel9" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel12" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="txtPassword" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtDiaChi" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
@@ -590,8 +586,6 @@
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JTextField" name="txtPassword">
-                </Component>
                 <Component class="javax.swing.JTextField" name="txtTenKhach">
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtNgaySinh">
@@ -604,11 +598,6 @@
                   </Properties>
                 </Component>
                 <Component class="javax.swing.JTextField" name="txtPhone">
-                </Component>
-                <Component class="javax.swing.JLabel" name="jLabel9">
-                  <Properties>
-                    <Property name="text" type="java.lang.String" value="Password"/>
-                  </Properties>
                 </Component>
                 <Container class="javax.swing.JScrollPane" name="jScrollPane2">
                   <AuxValues>

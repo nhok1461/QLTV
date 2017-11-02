@@ -239,8 +239,8 @@ public class ThongKe extends javax.swing.JFrame {
                 String content = this.taBaoCao.getText();
                 jfc.setDialogTitle("Save File");
                 FileOutputStream fos = new FileOutputStream(jfc.getSelectedFile());
-                fos.write(content.getBytes());
-                fos.flush();
+                fos.write(content.getBytes()); // Ghi chuỗi tới output stream dưới dạng dãy các byte. 
+               fos.flush();
                 fos.close();
                 JOptionPane.showMessageDialog(null, "Lưu thành công");
             }

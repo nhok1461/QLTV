@@ -711,9 +711,8 @@ public class JAdminUpdate extends javax.swing.JFrame {
         else if(this.txtMaSach.getText().length()>10) JOptionPane.showMessageDialog(null, "Mã sách không được lớn hơn 10 ký tự", "thông báo", 2);
         else {
             Sach s = new Sach(this.txtMaSach.getText(), this.txtTenSach.getText(), this.txtTenTacGia.getText(),this.txtNhaXb.getText(),
-             Integer.parseInt(this.txtGia.getText()),Integer.parseInt(this.txtSoLuong.getText()));
+            Integer.parseInt(this.txtGia.getText()),Integer.parseInt(this.txtSoLuong.getText()));
             SachData.InsertSach(s);
-//            this.btLookSach.doClick();
         }
         
         
@@ -804,7 +803,6 @@ public class JAdminUpdate extends javax.swing.JFrame {
             KhachHang s = new KhachHang(this.txtMaKhach.getText(), this.txtTenKhach.getText(),Date.valueOf(this.txtNgaySinh.getText()),
             this.txtDiaChi.getText(),this.txtPhone.getText());
             KhachHangData.InsertKhachHang(s);
-//            this.btLookKhach.doClick();
         }
         }catch(Exception e) {
             JOptionPane.showMessageDialog(null, "Có lỗi xảy ra", "Thông báo", 2);
@@ -896,7 +894,6 @@ public class JAdminUpdate extends javax.swing.JFrame {
             PhieuMuon p = new PhieuMuon(this.txtMaPhieuMuon.getText(),this.txtNguoiMuon.getText(),this.txtSachMuon.getText(),
                     Date.valueOf(this.txtNgayMuon.getText()),Date.valueOf(this.txtHanTra.getText()));
             PhieuMuonData.InsertPhieu(p);
-//            this.btLookMuon.doClick();
         }
         }catch(Exception e) {
             JOptionPane.showMessageDialog(null, "Có lỗi xảy ra", "Thông báo", 2);
